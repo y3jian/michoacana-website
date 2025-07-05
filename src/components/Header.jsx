@@ -5,7 +5,10 @@ export default function Header({ setCurrentPage }) {
   return (
 <Box
       sx = {{
-        width: "95.65%",
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
         maxWidth: "100%",
         height: 120,
         bgcolor: "rgb(213, 59, 128)", // 213, 59, 128
@@ -14,6 +17,7 @@ export default function Header({ setCurrentPage }) {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-around",
+        zIndex: 1000,
       }}
       >
         {/* logo */}

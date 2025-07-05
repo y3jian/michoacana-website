@@ -4,7 +4,7 @@ import ImageSlider from "../components/ImageSlider"
 
 export default function Home ({setCurrentPage}) {
   return (
-    <div className="p-6 text-center">
+    <div className="p-6 text-center" style={{ paddingTop: "120px" }}>
       <Box
       component = "img"
       src = "/images/storefront.jpg"

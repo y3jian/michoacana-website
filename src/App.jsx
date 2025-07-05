@@ -15,26 +15,31 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  const renderPage = () => {
-    switch (currentPage) {
-      case "home":
-        return <Home setCurrentPage = {setCurrentPage} />;
-      case "menu":
-        return <Menu />;
-      case "contact":
-        return <Contact />;
-      case "admin":
-        return <Admin />;
-      default:
-        return <Home setCurrentPage = {setCurrentPage} />;
-    }
-  };
+  // const renderPage = () => {
+  //   switch (currentPage) {
+  //     case "home":
+  //       return <Home setCurrentPage = {setCurrentPage} />;
+  //     case "menu":
+  //       return <Menu />;
+  //     case "contact":
+  //       return <Contact />;
+  //     case "admin":
+  //       return <Admin />;
+  //     default:
+  //       return <Home setCurrentPage = {setCurrentPage} />;
+  //   }
+  // };
   if (loading) return <Loading />;
 
   return (
     <div>
-      <Header setCurrentPage = {setCurrentPage}/>
-      <div className="p-6">{renderPage()}</div>
+      {/* <Header setCurrentPage = {setCurrentPage}/>
+      <div className="p-6">{renderPage()}</div> */}
+      <Header />
+      <Home />
+      <Menu />
+      <Contact />
+
     </div>
   );
 }
