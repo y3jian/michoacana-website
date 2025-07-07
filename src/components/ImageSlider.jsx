@@ -23,7 +23,7 @@ export default function ImageSlider() {
             component="img"
             src={item.img}
             alt={item.alt}
-            sx={{ width: "100%", height: 700, objectFit: "cover" }}
+            sx={{ width: "100%", height: "580px", objectFit: "cover" }}
           />
         </Paper>
       ))}

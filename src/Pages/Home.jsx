@@ -49,7 +49,6 @@ const offset = Math.min (scrollY / 2, 200);
 
         <Button>View Menu</Button>
       </Box>
-      
         <Box
           component = "img"
           src="/images/Mangoneada-Cup.png"
@@ -63,8 +62,71 @@ const offset = Math.min (scrollY / 2, 200);
             transition: "transform 0.1s ease-out",
           }}
         />
-
+        
       </Box>
+      {/* ABOUT */}
+      <Box
+      sx = {{
+        display: "flex",
+        alignItems: "flex-start",
+        justifyContent: "space-between",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "700px",
+        bgcolor: "rgba(242, 200, 218)",
+      }}>
+        <Box
+        sx = {{
+          pl: 5,
+          pt: 7,
+          width: "50%",
+          transform: `translateX(${offset/4}px)`,
+          transition: "transform 0.1s ease-out",
+        }}><ImageSlider/></Box>
+
+        <Box
+        sx= {{
+          position:"right",
+          pt: 30,
+          //pr:10,
+          width: "50%",
+          color: "Black",
+          textAlign: "center",
+        }}
+        >
+          <Typography variant = "h3">Delicious Treats</Typography>
+          <Typography variant = "h6">Bethesda Walk, 
+            3059 Lawrenceville Highway, 
+            <br/>Lawrenceville, GA</Typography>
+          <Typography variant = "h6">Open 11:00 am - 9:00 pm daily</Typography>
+        </Box> 
+        {/* <Box
+        component = "img"
+          src="/images/store-view.jpg"
+          alt="storeFront"
+          sx={{
+            pt: 2,
+            width: "50%",
+            transform: `translateX(${offset/4}px)`,
+            transition: "transform 0.1s ease-out",
+          }}
+          ></Box>
+        <Box
+        sx= {{
+          position:"right",
+          pt: 3,
+          pr:50,
+          width: "50%",
+          height: "50%",
+          color: "Black",
+          textAlign: "right",
+        }}
+        >
+          <Typography variant = "h5">Hello</Typography>
+        </Box> */}
+      </Box>
+      
 
     </div>
   );
